@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* font-family: 'Cairo', sans-serif; */
+    line-height: 1.6;
+    color: #060606;
+    direction: rtl;
+}
+header {
+    background-color: #dbb455;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+header img {
+    margin-left: 10px;
+}
+nav {
+    background-color: #199738;
+    padding: 0.5rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    height: 400px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    max-width: 800px;
+    padding: 1rem;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+}
+.feature {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+footer {
+    background-color: #8c1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+button {
+    background-color: #dbb455;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #199738;
+}
+
+#about-us, #activities {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+#about-us h2, #activities h2 {
+    margin-bottom: 1rem;
+    color: #dbb455;
+}
+#about-us p, #activities p, #activities ul {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    line-height: 1.8;
+}
+#activities ul {
+    list-style: none;
+    padding: 0;
+}
+#activities ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .hero {
+        height: auto;
+        padding: 2rem 0;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        text-align: center;
+    }
+    .hero-content {
+        padding: 1rem;
+    }
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
